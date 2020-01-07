@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>API de Filmes</title>
+</head>
+<body>
+    
+    <h1>Pesquisar Filmes Assistidos</h1>
+    
+    <!-- trecho para mostrar todos filmes do banco de dados
+    <ul>
+        {% for filme in filmes %}
+            <li> {{ filme.nome }} - {{ filme.avaliacao }} </li>
+        {% endfor %}
+    </ul>
+    -->
+    
+    <p>Informe a lista dos filmes que gostaria de verificar.</p>
+    <p><i>Separar os títulos por vírgula</i></p>
+   
+    <form method="POST" action="search/">
+        {% csrf_token %}
+        <input type="text" name="textfield">
+        <button type="submit">Pesquisar</button>
+    </form>
+    
+</body>
+</html>

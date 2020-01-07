@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado da Pesquisa</title>
+</head>
+<body>
+    
+    <h1>Filmes Encontrados</h1>
+    
+    <ul>
+        {% for filme in filmes %}
+            <li> {{ filme }} </li>
+        {% endfor %}
+    </ul>
+      
+</body>
+</html>
